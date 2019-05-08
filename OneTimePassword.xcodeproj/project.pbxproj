@@ -1,834 +1,950 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		C9425DE4227501F500EF93BD /* Lint OneTimePassword */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = C9425DE7227501F500EF93BD /* Build configuration list for PBXAggregateTarget "Lint OneTimePassword" */;
-			buildPhases = (
-				C97CDF2E1BEFB20000D64406 /* Run SwiftLint */,
-			);
-			dependencies = (
-			);
-			name = "Lint OneTimePassword";
-			productName = "Lint OneTimePassword";
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		5B39F49C1DBD06EB00CD2DAB /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A2519196B1BA400F86892 /* Token.swift */; };
-		5B39F49D1DBD06EE00CD2DAB /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC7EC7196BDF3B00B50C82 /* Generator.swift */; };
-		5B39F49E1DBD06F100CD2DAB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F544AC1C8391630023CCF0 /* Crypto.swift */; };
-		5B39F49F1DBD06F500CD2DAB /* Token+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC7EC3196BD5DF00B50C82 /* Token+URL.swift */; };
-		5B39F4A01DBD06F900CD2DAB /* PersistentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F9FB81C03D6BC00CEA286 /* PersistentToken.swift */; };
-		5B39F4A11DBD06FC00CD2DAB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9003417196F7046009733E8 /* Keychain.swift */; };
-		5B39F4A51DBD08A900CD2DAB /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944A55E1A7EDAE200E08B1E /* Base32.framework */; };
-		C9003418196F7046009733E8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9003417196F7046009733E8 /* Keychain.swift */; };
-		C9290C301947D104008AE4DE /* TokenSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9290C2F1947D104008AE4DE /* TokenSerializationTests.swift */; };
-		C93A251A196B1BA400F86892 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A2519196B1BA400F86892 /* Token.swift */; };
-		C944A55F1A7EDAE200E08B1E /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944A55E1A7EDAE200E08B1E /* Base32.framework */; };
-		C944A5951A809CC000E08B1E /* OTPTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944A5941A809CC000E08B1E /* OTPTokenTests.swift */; };
-		C94B2007197774A20014A202 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B2006197774A20014A202 /* TokenTests.swift */; };
-		C95B10CC196D22B9000840AA /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B10CB196D22B9000840AA /* GeneratorTests.swift */; };
-		C95F9FB91C03D6BC00CEA286 /* PersistentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F9FB81C03D6BC00CEA286 /* PersistentToken.swift */; };
-		C97142361C1155FC0063B37E /* OTPToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC7ECC196C4D3D00B50C82 /* OTPToken.swift */; };
-		C97142371C1156DB0063B37E /* OneTimePassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97C82381946E51D00FD9F4C /* OneTimePassword.framework */; };
-		C97C82441946E51D00FD9F4C /* OneTimePassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97C82381946E51D00FD9F4C /* OneTimePassword.framework */; };
-		C9A486C8196F38C800524F51 /* OTPTokenSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A2515196AFE1100F86892 /* OTPTokenSerializationTests.m */; settings = {COMPILER_FLAGS = "-Wno-nullable-to-nonnull-conversion"; }; };
-		C9A486C9196F38CD00524F51 /* OTPTypeStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C9FE25196D181800C7ACEE /* OTPTypeStrings.m */; };
-		C9B2A19C199A7F1B00BC4A8A /* EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2A19B199A7F1B00BC4A8A /* EquatableTests.swift */; };
-		C9B77D771C03078B00BAF6BF /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A2514196AFE1100F86892 /* KeychainTests.swift */; };
-		C9DC7EC4196BD5DF00B50C82 /* Token+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC7EC3196BD5DF00B50C82 /* Token+URL.swift */; };
-		C9DC7EC8196BDF3B00B50C82 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC7EC7196BDF3B00B50C82 /* Generator.swift */; };
-		C9F544AD1C8391630023CCF0 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F544AC1C8391630023CCF0 /* Crypto.swift */; };
-		FD6C3C0F1E0200F800EC4528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6C3C0E1E0200F800EC4528 /* AppDelegate.swift */; };
-		FD6C3C341E02033600EC4528 /* OneTimePassword.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97C82381946E51D00FD9F4C /* OneTimePassword.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FDA64C751E020ABF004AD993 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA64C741E020ABF004AD993 /* Launch Screen.storyboard */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C97142381C1157FC0063B37E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C97C822F1946E51D00FD9F4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C97C82371946E51D00FD9F4C;
-			remoteInfo = "OneTimePassword (iOS)";
-		};
-		C97C82451946E51D00FD9F4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C97C822F1946E51D00FD9F4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C97C82371946E51D00FD9F4C;
-			remoteInfo = "OneTimePassword (iOS)";
-		};
-		FD6C3C201E0200F900EC4528 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C97C822F1946E51D00FD9F4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD6C3C0B1E0200F800EC4528;
-			remoteInfo = OneTimePasswordTestApp;
-		};
-		FD6C3C351E02033600EC4528 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C97C822F1946E51D00FD9F4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C97C82371946E51D00FD9F4C;
-			remoteInfo = "OneTimePassword (iOS)";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FD6C3C371E02033700EC4528 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FD6C3C341E02033600EC4528 /* OneTimePassword.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		5B39F4941DBD06BA00CD2DAB /* OneTimePassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneTimePassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9003417196F7046009733E8 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		C9290C2F1947D104008AE4DE /* TokenSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSerializationTests.swift; sourceTree = "<group>"; };
-		C93A2514196AFE1100F86892 /* KeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
-		C93A2515196AFE1100F86892 /* OTPTokenSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPTokenSerializationTests.m; sourceTree = "<group>"; };
-		C93A2519196B1BA400F86892 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		C93CC01A1DCBB755006255FA /* OneTimePassword-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OneTimePassword-iOS.xcconfig"; sourceTree = "<group>"; };
-		C93CC01B1DCBB7FB006255FA /* OneTimePassword-watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OneTimePassword-watchOS.xcconfig"; sourceTree = "<group>"; };
-		C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OneTimePasswordTests-iOS.xcconfig"; sourceTree = "<group>"; };
-		C93CC01E1DCBBDE7006255FA /* OneTimePassword.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OneTimePassword.xcconfig; sourceTree = "<group>"; };
-		C93CC0211DCBC189006255FA /* OneTimePasswordTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OneTimePasswordTests.xcconfig; sourceTree = "<group>"; };
-		C944A55E1A7EDAE200E08B1E /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Base32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C944A5941A809CC000E08B1E /* OTPTokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTokenTests.swift; sourceTree = "<group>"; };
-		C94765061C64587800C7527E /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
-		C947650A1C66ADEC00C7527E /* OneTimePassword.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; indentWidth = 2; path = OneTimePassword.podspec; sourceTree = "<group>"; };
-		C94B2006197774A20014A202 /* TokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
-		C94B9BC81BD7270E0073D7C5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		C94B9BC91BD727150073D7C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C94B9BCA1BD7271E0073D7C5 /* AUTHORS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS.txt; sourceTree = "<group>"; };
-		C95B10CB196D22B9000840AA /* GeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
-		C95F9FB81C03D6BC00CEA286 /* PersistentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentToken.swift; sourceTree = "<group>"; };
-		C9619C5C1D73FB3500757587 /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codecov.yml; sourceTree = "<group>"; };
-		C97C82381946E51D00FD9F4C /* OneTimePassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneTimePassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C97C823C1946E51D00FD9F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C97C82431946E51D00FD9F4C /* OneTimePasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTimePasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C97C82491946E51D00FD9F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C996EC2C1A74D5830076B105 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Configurations/Debug.xcconfig; sourceTree = "<group>"; };
-		C996EC2D1A74D5830076B105 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Profile.xcconfig; path = Configurations/Profile.xcconfig; sourceTree = "<group>"; };
-		C996EC2E1A74D5830076B105 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Configurations/Release.xcconfig; sourceTree = "<group>"; };
-		C996EC2F1A74D5830076B105 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Test.xcconfig; path = Configurations/Test.xcconfig; sourceTree = "<group>"; };
-		C9A486B3196F352E00524F51 /* OneTimePasswordLegacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTimePasswordLegacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9A486B9196F352F00524F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9B2A19B199A7F1B00BC4A8A /* EquatableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableTests.swift; sourceTree = "<group>"; };
-		C9B84D1C1C015EC0002EE631 /* .hound.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text; path = .hound.yml; sourceTree = "<group>"; };
-		C9B84D1D1C015EC0002EE631 /* .swiftlint.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		C9B84D1E1C015EC0002EE631 /* .travis.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		C9B84D1F1C015EC8002EE631 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		C9C9FE24196D181800C7ACEE /* OTPTypeStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPTypeStrings.h; sourceTree = "<group>"; };
-		C9C9FE25196D181800C7ACEE /* OTPTypeStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPTypeStrings.m; sourceTree = "<group>"; };
-		C9DC7EC3196BD5DF00B50C82 /* Token+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Token+URL.swift"; sourceTree = "<group>"; };
-		C9DC7EC7196BDF3B00B50C82 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
-		C9DC7ECC196C4D3D00B50C82 /* OTPToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPToken.swift; sourceTree = "<group>"; };
-		C9E829531C62DFDA003F5FC9 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		C9E829541C62FFBD003F5FC9 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		C9E829551C630514003F5FC9 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
-		C9F544AC1C8391630023CCF0 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		FD6C3C0C1E0200F800EC4528 /* OneTimePasswordTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTimePasswordTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD6C3C0E1E0200F800EC4528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD6C3C1A1E0200F800EC4528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDA64C741E020ABF004AD993 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		FDA64C771E021394004AD993 /* OneTimePasswordTestApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OneTimePasswordTestApp.xcconfig; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		5B39F4901DBD06BA00CD2DAB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B39F4A51DBD08A900CD2DAB /* Base32.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C97C82341946E51D00FD9F4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C944A55F1A7EDAE200E08B1E /* Base32.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C97C82401946E51D00FD9F4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C97C82441946E51D00FD9F4C /* OneTimePassword.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9A486B0196F352E00524F51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C97142371C1156DB0063B37E /* OneTimePassword.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		746E7166AD60449882DD84C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C944A55E1A7EDAE200E08B1E /* Base32.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9307A8619A8522F00609B02 /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				C9DC7EC3196BD5DF00B50C82 /* Token+URL.swift */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		C93CC01F1DCBC0E6006255FA /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				C93CC01E1DCBBDE7006255FA /* OneTimePassword.xcconfig */,
-				C93CC01A1DCBB755006255FA /* OneTimePassword-iOS.xcconfig */,
-				C93CC01B1DCBB7FB006255FA /* OneTimePassword-watchOS.xcconfig */,
-				C93CC0211DCBC189006255FA /* OneTimePasswordTests.xcconfig */,
-				C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */,
-				FDA64C771E021394004AD993 /* OneTimePasswordTestApp.xcconfig */,
-			);
-			name = Targets;
-			sourceTree = "<group>";
-		};
-		C94B9BC71BD726F70073D7C5 /* Docs */ = {
-			isa = PBXGroup;
-			children = (
-				C94B9BCA1BD7271E0073D7C5 /* AUTHORS.txt */,
-				C9E829531C62DFDA003F5FC9 /* CHANGELOG.md */,
-				C9E829551C630514003F5FC9 /* CONDUCT.md */,
-				C9E829541C62FFBD003F5FC9 /* CONTRIBUTING.md */,
-				C94B9BC81BD7270E0073D7C5 /* LICENSE.md */,
-				C94B9BC91BD727150073D7C5 /* README.md */,
-			);
-			name = Docs;
-			sourceTree = "<group>";
-		};
-		C97C822E1946E51D00FD9F4C = {
-			isa = PBXGroup;
-			children = (
-				C97C823A1946E51D00FD9F4C /* Sources */,
-				C97C82471946E51D00FD9F4C /* Tests */,
-				C9A486B7196F352F00524F51 /* OneTimePasswordLegacyTests */,
-				746E7166AD60449882DD84C7 /* Frameworks */,
-				C996EC281A74D5830076B105 /* Configuration */,
-				C97C82391946E51D00FD9F4C /* Products */,
-				C9B84D1B1C015EA2002EE631 /* Tools */,
-				C94B9BC71BD726F70073D7C5 /* Docs */,
-			);
-			indentWidth = 4;
-			sourceTree = "<group>";
-			usesTabs = 0;
-		};
-		C97C82391946E51D00FD9F4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C97C82381946E51D00FD9F4C /* OneTimePassword.framework */,
-				C97C82431946E51D00FD9F4C /* OneTimePasswordTests.xctest */,
-				C9A486B3196F352E00524F51 /* OneTimePasswordLegacyTests.xctest */,
-				5B39F4941DBD06BA00CD2DAB /* OneTimePassword.framework */,
-				FD6C3C0C1E0200F800EC4528 /* OneTimePasswordTestApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C97C823A1946E51D00FD9F4C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C93A2519196B1BA400F86892 /* Token.swift */,
-				C9DC7EC7196BDF3B00B50C82 /* Generator.swift */,
-				C9F544AC1C8391630023CCF0 /* Crypto.swift */,
-				C9307A8619A8522F00609B02 /* Serialization */,
-				C9A9B09A1A81EF4B00F3C4DC /* Persistence */,
-				C97C823B1946E51D00FD9F4C /* Supporting Files */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		C97C823B1946E51D00FD9F4C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C97C823C1946E51D00FD9F4C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C97C82471946E51D00FD9F4C /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C94B2006197774A20014A202 /* TokenTests.swift */,
-				C95B10CB196D22B9000840AA /* GeneratorTests.swift */,
-				C93A2514196AFE1100F86892 /* KeychainTests.swift */,
-				C9290C2F1947D104008AE4DE /* TokenSerializationTests.swift */,
-				C9B2A19B199A7F1B00BC4A8A /* EquatableTests.swift */,
-				C97C82481946E51D00FD9F4C /* Supporting Files */,
-				FD6C3C0D1E0200F800EC4528 /* Test App */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		C97C82481946E51D00FD9F4C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C97C82491946E51D00FD9F4C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C996EC281A74D5830076B105 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				C996EC291A74D5830076B105 /* Project */,
-				C93CC01F1DCBC0E6006255FA /* Targets */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		C996EC291A74D5830076B105 /* Project */ = {
-			isa = PBXGroup;
-			children = (
-				C996EC2C1A74D5830076B105 /* Debug.xcconfig */,
-				C996EC2D1A74D5830076B105 /* Profile.xcconfig */,
-				C996EC2E1A74D5830076B105 /* Release.xcconfig */,
-				C996EC2F1A74D5830076B105 /* Test.xcconfig */,
-			);
-			name = Project;
-			path = Carthage/Checkouts/xcconfigs/Base;
-			sourceTree = SOURCE_ROOT;
-		};
-		C9A486B7196F352F00524F51 /* OneTimePasswordLegacyTests */ = {
-			isa = PBXGroup;
-			children = (
-				C9DC7ECC196C4D3D00B50C82 /* OTPToken.swift */,
-				C944A5941A809CC000E08B1E /* OTPTokenTests.swift */,
-				C93A2515196AFE1100F86892 /* OTPTokenSerializationTests.m */,
-				C9C9FE23196D176300C7ACEE /* Helpers */,
-				C9A486B8196F352F00524F51 /* Supporting Files */,
-			);
-			path = OneTimePasswordLegacyTests;
-			sourceTree = "<group>";
-		};
-		C9A486B8196F352F00524F51 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9A486B9196F352F00524F51 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C9A9B09A1A81EF4B00F3C4DC /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-				C95F9FB81C03D6BC00CEA286 /* PersistentToken.swift */,
-				C9003417196F7046009733E8 /* Keychain.swift */,
-			);
-			name = Persistence;
-			sourceTree = "<group>";
-		};
-		C9B84D1B1C015EA2002EE631 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				C9B84D1F1C015EC8002EE631 /* Cartfile */,
-				C94765061C64587800C7527E /* Cartfile.private */,
-				C947650A1C66ADEC00C7527E /* OneTimePassword.podspec */,
-				C9619C5C1D73FB3500757587 /* .codecov.yml */,
-				C9B84D1C1C015EC0002EE631 /* .hound.yml */,
-				C9B84D1D1C015EC0002EE631 /* .swiftlint.yml */,
-				C9B84D1E1C015EC0002EE631 /* .travis.yml */,
-			);
-			name = Tools;
-			sourceTree = "<group>";
-		};
-		C9C9FE23196D176300C7ACEE /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C9C9FE24196D181800C7ACEE /* OTPTypeStrings.h */,
-				C9C9FE25196D181800C7ACEE /* OTPTypeStrings.m */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		FD6C3C0D1E0200F800EC4528 /* Test App */ = {
-			isa = PBXGroup;
-			children = (
-				FD6C3C0E1E0200F800EC4528 /* AppDelegate.swift */,
-				FD6C3C1A1E0200F800EC4528 /* Info.plist */,
-				FDA64C741E020ABF004AD993 /* Launch Screen.storyboard */,
-			);
-			name = "Test App";
-			path = App;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		5B39F4931DBD06BA00CD2DAB /* OneTimePassword (watchOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B39F49B1DBD06BA00CD2DAB /* Build configuration list for PBXNativeTarget "OneTimePassword (watchOS)" */;
-			buildPhases = (
-				5B39F48F1DBD06BA00CD2DAB /* Sources */,
-				5B39F4901DBD06BA00CD2DAB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OneTimePassword (watchOS)";
-			productName = "OneTimePassword (watchOS)";
-			productReference = 5B39F4941DBD06BA00CD2DAB /* OneTimePassword.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C97C82371946E51D00FD9F4C /* OneTimePassword (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C97C824E1946E51D00FD9F4C /* Build configuration list for PBXNativeTarget "OneTimePassword (iOS)" */;
-			buildPhases = (
-				C97C82331946E51D00FD9F4C /* Sources */,
-				C97C82341946E51D00FD9F4C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OneTimePassword (iOS)";
-			productName = "OneTimePassword (iOS)";
-			productReference = C97C82381946E51D00FD9F4C /* OneTimePassword.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C97C82421946E51D00FD9F4C /* OneTimePasswordTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C97C82511946E51D00FD9F4C /* Build configuration list for PBXNativeTarget "OneTimePasswordTests" */;
-			buildPhases = (
-				C97C823F1946E51D00FD9F4C /* Sources */,
-				C97C82401946E51D00FD9F4C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C97C82461946E51D00FD9F4C /* PBXTargetDependency */,
-				FD6C3C211E0200F900EC4528 /* PBXTargetDependency */,
-			);
-			name = OneTimePasswordTests;
-			productName = OneTimePasswordTests;
-			productReference = C97C82431946E51D00FD9F4C /* OneTimePasswordTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C9A486B2196F352E00524F51 /* OneTimePasswordLegacyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9A486C1196F352F00524F51 /* Build configuration list for PBXNativeTarget "OneTimePasswordLegacyTests" */;
-			buildPhases = (
-				C9A486AF196F352E00524F51 /* Sources */,
-				C9A486B0196F352E00524F51 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C97142391C1157FC0063B37E /* PBXTargetDependency */,
-			);
-			name = OneTimePasswordLegacyTests;
-			productName = OneTimePasswordLegacyTests;
-			productReference = C9A486B3196F352E00524F51 /* OneTimePasswordLegacyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FD6C3C0B1E0200F800EC4528 /* OneTimePasswordTestApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD6C3C2A1E0200F900EC4528 /* Build configuration list for PBXNativeTarget "OneTimePasswordTestApp" */;
-			buildPhases = (
-				FD6C3C081E0200F800EC4528 /* Sources */,
-				FD6C3C0A1E0200F800EC4528 /* Resources */,
-				FD6C3C371E02033700EC4528 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FD6C3C361E02033600EC4528 /* PBXTargetDependency */,
-			);
-			name = OneTimePasswordTestApp;
-			productName = OneTimePasswordApp;
-			productReference = FD6C3C0C1E0200F800EC4528 /* OneTimePasswordTestApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C97C822F1946E51D00FD9F4C /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Matt Rubin";
-				TargetAttributes = {
-					5B39F4931DBD06BA00CD2DAB = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
-					};
-					C9425DE4227501F500EF93BD = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					C97C82371946E51D00FD9F4C = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
-					};
-					C97C82421946E51D00FD9F4C = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
-						TestTargetID = FD6C3C0B1E0200F800EC4528;
-					};
-					C9A486B2196F352E00524F51 = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
-					};
-					FD6C3C0B1E0200F800EC4528 = {
-						CreatedOnToolsVersion = 8.2;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
-			buildConfigurationList = C97C82321946E51D00FD9F4C /* Build configuration list for PBXProject "OneTimePassword" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C97C822E1946E51D00FD9F4C;
-			productRefGroup = C97C82391946E51D00FD9F4C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C97C82371946E51D00FD9F4C /* OneTimePassword (iOS) */,
-				C97C82421946E51D00FD9F4C /* OneTimePasswordTests */,
-				C9A486B2196F352E00524F51 /* OneTimePasswordLegacyTests */,
-				FD6C3C0B1E0200F800EC4528 /* OneTimePasswordTestApp */,
-				5B39F4931DBD06BA00CD2DAB /* OneTimePassword (watchOS) */,
-				C9425DE4227501F500EF93BD /* Lint OneTimePassword */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FD6C3C0A1E0200F800EC4528 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDA64C751E020ABF004AD993 /* Launch Screen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C97CDF2E1BEFB20000D64406 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint is not installed. (https://github.com/realm/SwiftLint)\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		5B39F48F1DBD06BA00CD2DAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B39F49E1DBD06F100CD2DAB /* Crypto.swift in Sources */,
-				5B39F49F1DBD06F500CD2DAB /* Token+URL.swift in Sources */,
-				5B39F49C1DBD06EB00CD2DAB /* Token.swift in Sources */,
-				5B39F49D1DBD06EE00CD2DAB /* Generator.swift in Sources */,
-				5B39F4A01DBD06F900CD2DAB /* PersistentToken.swift in Sources */,
-				5B39F4A11DBD06FC00CD2DAB /* Keychain.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C97C82331946E51D00FD9F4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F544AD1C8391630023CCF0 /* Crypto.swift in Sources */,
-				C93A251A196B1BA400F86892 /* Token.swift in Sources */,
-				C95F9FB91C03D6BC00CEA286 /* PersistentToken.swift in Sources */,
-				C9DC7EC8196BDF3B00B50C82 /* Generator.swift in Sources */,
-				C9003418196F7046009733E8 /* Keychain.swift in Sources */,
-				C9DC7EC4196BD5DF00B50C82 /* Token+URL.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C97C823F1946E51D00FD9F4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C94B2007197774A20014A202 /* TokenTests.swift in Sources */,
-				C95B10CC196D22B9000840AA /* GeneratorTests.swift in Sources */,
-				C9B77D771C03078B00BAF6BF /* KeychainTests.swift in Sources */,
-				C9290C301947D104008AE4DE /* TokenSerializationTests.swift in Sources */,
-				C9B2A19C199A7F1B00BC4A8A /* EquatableTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9A486AF196F352E00524F51 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9A486C8196F38C800524F51 /* OTPTokenSerializationTests.m in Sources */,
-				C97142361C1155FC0063B37E /* OTPToken.swift in Sources */,
-				C9A486C9196F38CD00524F51 /* OTPTypeStrings.m in Sources */,
-				C944A5951A809CC000E08B1E /* OTPTokenTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD6C3C081E0200F800EC4528 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD6C3C0F1E0200F800EC4528 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C97142391C1157FC0063B37E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C97C82371946E51D00FD9F4C /* OneTimePassword (iOS) */;
-			targetProxy = C97142381C1157FC0063B37E /* PBXContainerItemProxy */;
-		};
-		C97C82461946E51D00FD9F4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C97C82371946E51D00FD9F4C /* OneTimePassword (iOS) */;
-			targetProxy = C97C82451946E51D00FD9F4C /* PBXContainerItemProxy */;
-		};
-		FD6C3C211E0200F900EC4528 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FD6C3C0B1E0200F800EC4528 /* OneTimePasswordTestApp */;
-			targetProxy = FD6C3C201E0200F900EC4528 /* PBXContainerItemProxy */;
-		};
-		FD6C3C361E02033600EC4528 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C97C82371946E51D00FD9F4C /* OneTimePassword (iOS) */;
-			targetProxy = FD6C3C351E02033600EC4528 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		5B39F4991DBD06BA00CD2DAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01B1DCBB7FB006255FA /* OneTimePassword-watchOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		5B39F49A1DBD06BA00CD2DAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01B1DCBB7FB006255FA /* OneTimePassword-watchOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		C9425DE5227501F500EF93BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		C9425DE6227501F500EF93BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		C97C824C1946E51D00FD9F4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C996EC2C1A74D5830076B105 /* Debug.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
-				SWIFT_VERSION = 4.2;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		C97C824D1946E51D00FD9F4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C996EC2E1A74D5830076B105 /* Release.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
-				SWIFT_VERSION = 4.2;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		C97C824F1946E51D00FD9F4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01A1DCBB755006255FA /* OneTimePassword-iOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		C97C82501946E51D00FD9F4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01A1DCBB755006255FA /* OneTimePassword-iOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		C97C82521946E51D00FD9F4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		C97C82531946E51D00FD9F4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		C9A486BE196F352F00524F51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = OneTimePasswordLegacyTests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mattrubin.onetimepassword.legacy.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C9A486BF196F352F00524F51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93CC01C1DCBB875006255FA /* OneTimePasswordTests-iOS.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = OneTimePasswordLegacyTests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mattrubin.onetimepassword.legacy.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FD6C3C261E0200F900EC4528 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDA64C771E021394004AD993 /* OneTimePasswordTestApp.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		FD6C3C271E0200F900EC4528 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDA64C771E021394004AD993 /* OneTimePasswordTestApp.xcconfig */;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		5B39F49B1DBD06BA00CD2DAB /* Build configuration list for PBXNativeTarget "OneTimePassword (watchOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B39F4991DBD06BA00CD2DAB /* Debug */,
-				5B39F49A1DBD06BA00CD2DAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9425DE7227501F500EF93BD /* Build configuration list for PBXAggregateTarget "Lint OneTimePassword" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9425DE5227501F500EF93BD /* Debug */,
-				C9425DE6227501F500EF93BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C97C82321946E51D00FD9F4C /* Build configuration list for PBXProject "OneTimePassword" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C97C824C1946E51D00FD9F4C /* Debug */,
-				C97C824D1946E51D00FD9F4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C97C824E1946E51D00FD9F4C /* Build configuration list for PBXNativeTarget "OneTimePassword (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C97C824F1946E51D00FD9F4C /* Debug */,
-				C97C82501946E51D00FD9F4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C97C82511946E51D00FD9F4C /* Build configuration list for PBXNativeTarget "OneTimePasswordTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C97C82521946E51D00FD9F4C /* Debug */,
-				C97C82531946E51D00FD9F4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9A486C1196F352F00524F51 /* Build configuration list for PBXNativeTarget "OneTimePasswordLegacyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9A486BE196F352F00524F51 /* Debug */,
-				C9A486BF196F352F00524F51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD6C3C2A1E0200F900EC4528 /* Build configuration list for PBXNativeTarget "OneTimePasswordTestApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD6C3C261E0200F900EC4528 /* Debug */,
-				FD6C3C271E0200F900EC4528 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C97C822F1946E51D00FD9F4C /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Base32::Base32" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_41";
+         buildPhases = (
+            "OBJ_44",
+            "OBJ_49"
+         );
+         dependencies = (
+         );
+         name = "Base32";
+         productName = "Base32";
+         productReference = "Base32::Base32::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Base32::Base32::Product" = {
+         isa = "PBXFileReference";
+         path = "Base32.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Base32::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_51";
+         buildPhases = (
+            "OBJ_54"
+         );
+         dependencies = (
+         );
+         name = "Base32PackageDescription";
+         productName = "Base32PackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_36";
+         projectDirPath = ".";
+         targets = (
+            "Base32::Base32",
+            "Base32::SwiftPMPackageDescription",
+            "OneTimePassword::OneTimePassword",
+            "OneTimePassword::SwiftPMPackageDescription",
+            "OneTimePassword::OneTimePasswordPackageTests::ProductTarget",
+            "OneTimePassword::OneTimePasswordTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "Generator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "Keychain.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "PersistentToken.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "Token+URL.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "Token.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17",
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23"
+         );
+         name = "OneTimePasswordTests";
+         path = "Tests/OneTimePasswordTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_17" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_18"
+         );
+         name = "App";
+         path = "App";
+         sourceTree = "<group>";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "AppDelegate.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "EquatableTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "GeneratorTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "KeychainTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "TokenSerializationTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "TokenTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "Configuration";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "Carthage";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "OneTimePassword.xcworkspace";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "OneTimePasswordLegacyTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_28" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_29"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_30",
+            "OBJ_35"
+         );
+         name = "Base32 0.7.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "DEBUG=1",
+               "$(inherited)"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34"
+         );
+         name = "Base32";
+         path = ".build/checkouts/Base32--954716732000217361/Sources/Base32";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_31" = {
+         isa = "PBXFileReference";
+         path = "Base16.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "Base32.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXFileReference";
+         path = "StringExtension.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "shim.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/janiskirsteins/Projects/OneTimePassword/.build/checkouts/Base32--954716732000217361/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXGroup";
+         children = (
+            "OneTimePassword::OneTimePassword::Product",
+            "Base32::Base32::Product",
+            "OneTimePassword::OneTimePasswordTests::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_41" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_42",
+            "OBJ_43"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_42" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/Base32_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Base32";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "Base32";
+         };
+         name = "Debug";
+      };
+      "OBJ_43" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/Base32_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Base32";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "Base32";
+         };
+         name = "Release";
+      };
+      "OBJ_44" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47",
+            "OBJ_48"
+         );
+      };
+      "OBJ_45" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_46" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_47" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_48" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_49" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_15",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_36"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_52",
+            "OBJ_53"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_52" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_53" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_54" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_55"
+         );
+      };
+      "OBJ_55" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_57" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_58",
+            "OBJ_59"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_58" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/OneTimePassword_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "OneTimePassword";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "OneTimePassword";
+         };
+         name = "Debug";
+      };
+      "OBJ_59" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/OneTimePassword_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "OneTimePassword";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "OneTimePassword";
+         };
+         name = "Release";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66"
+         );
+      };
+      "OBJ_61" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_62" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_63" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_64" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_65" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_66" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_67" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_68"
+         );
+      };
+      "OBJ_68" = {
+         isa = "PBXBuildFile";
+         fileRef = "Base32::Base32::Product";
+      };
+      "OBJ_69" = {
+         isa = "PBXTargetDependency";
+         target = "Base32::Base32";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_71" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_72",
+            "OBJ_73"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_72" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_73" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_74" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_75"
+         );
+      };
+      "OBJ_75" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_77" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_78",
+            "OBJ_79"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_78" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_79" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11",
+            "OBJ_12",
+            "OBJ_13",
+            "OBJ_14"
+         );
+         name = "OneTimePassword";
+         path = "Sources/OneTimePassword";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXTargetDependency";
+         target = "OneTimePassword::OneTimePasswordTests";
+      };
+      "OBJ_82" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_83",
+            "OBJ_84"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_83" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/OneTimePasswordTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "OneTimePasswordTests";
+         };
+         name = "Debug";
+      };
+      "OBJ_84" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "OneTimePassword.xcodeproj/OneTimePasswordTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "OneTimePasswordTests";
+         };
+         name = "Release";
+      };
+      "OBJ_85" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88",
+            "OBJ_89",
+            "OBJ_90",
+            "OBJ_91"
+         );
+      };
+      "OBJ_86" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_87" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_88" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_89" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Crypto.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_91" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_92" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_93",
+            "OBJ_94"
+         );
+      };
+      "OBJ_93" = {
+         isa = "PBXBuildFile";
+         fileRef = "OneTimePassword::OneTimePassword::Product";
+      };
+      "OBJ_94" = {
+         isa = "PBXBuildFile";
+         fileRef = "Base32::Base32::Product";
+      };
+      "OBJ_95" = {
+         isa = "PBXTargetDependency";
+         target = "OneTimePassword::OneTimePassword";
+      };
+      "OBJ_96" = {
+         isa = "PBXTargetDependency";
+         target = "Base32::Base32";
+      };
+      "OneTimePassword::OneTimePassword" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_57";
+         buildPhases = (
+            "OBJ_60",
+            "OBJ_67"
+         );
+         dependencies = (
+            "OBJ_69"
+         );
+         name = "OneTimePassword";
+         productName = "OneTimePassword";
+         productReference = "OneTimePassword::OneTimePassword::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "OneTimePassword::OneTimePassword::Product" = {
+         isa = "PBXFileReference";
+         path = "OneTimePassword.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OneTimePassword::OneTimePasswordPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_77";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_80"
+         );
+         name = "OneTimePasswordPackageTests";
+         productName = "OneTimePasswordPackageTests";
+      };
+      "OneTimePassword::OneTimePasswordTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_82";
+         buildPhases = (
+            "OBJ_85",
+            "OBJ_92"
+         );
+         dependencies = (
+            "OBJ_95",
+            "OBJ_96"
+         );
+         name = "OneTimePasswordTests";
+         productName = "OneTimePasswordTests";
+         productReference = "OneTimePassword::OneTimePasswordTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "OneTimePassword::OneTimePasswordTests::Product" = {
+         isa = "PBXFileReference";
+         path = "OneTimePasswordTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OneTimePassword::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_71";
+         buildPhases = (
+            "OBJ_74"
+         );
+         dependencies = (
+         );
+         name = "OneTimePasswordPackageDescription";
+         productName = "OneTimePasswordPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+   };
+   rootObject = "OBJ_1";
 }
