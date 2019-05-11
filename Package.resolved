@@ -9,6 +9,15 @@
           "revision": "f235579fee2633320047dc12caed7ebd738fa77f",
           "version": "0.7.0"
         }
+      },
+      {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "6f79b4ea0a7ef8acb08ba3f3e23da32e83acaca3",
+          "version": "1.0.28"
+        }
       }
     ]
   },

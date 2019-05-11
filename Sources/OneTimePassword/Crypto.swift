@@ -24,35 +24,30 @@
 //
 
 import Foundation
-import CommonCrypto
+import Cryptor
+typealias _HMAC = HMAC
 
 func HMAC(algorithm: Generator.Algorithm, key: Data, data: Data) -> Data {
-    let (hashFunction, hashLength) = algorithm.hashInfo
-
-    let macOut = UnsafeMutablePointer<UInt8>.allocate(capacity: hashLength)
-    defer {
-        macOut.deallocate()
+    
+    let algo = algorithm.hashInfo
+    
+    guard let macOut = _HMAC(using: algo, key: key).update(data: data)?.final() else {
+        fatalError("Failed to calculate HMAC")
     }
 
-    key.withUnsafeBytes { keyBytes in
-        data.withUnsafeBytes { dataBytes in
-            CCHmac(hashFunction, keyBytes, key.count, dataBytes, data.count, macOut)
-        }
-    }
-
-    return Data(bytes: macOut, count: hashLength)
+    return Data(bytes: macOut, count: algo.digestLength())
 }
 
 private extension Generator.Algorithm {
     /// The corresponding CommonCrypto hash function and hash length.
-    var hashInfo: (hashFunction: CCHmacAlgorithm, hashLength: Int) {
+    var hashInfo: HMAC.Algorithm {
         switch self {
         case .sha1:
-            return (CCHmacAlgorithm(kCCHmacAlgSHA1), Int(CC_SHA1_DIGEST_LENGTH))
+            return .sha1
         case .sha256:
-            return (CCHmacAlgorithm(kCCHmacAlgSHA256), Int(CC_SHA256_DIGEST_LENGTH))
+            return .sha256
         case .sha512:
-            return (CCHmacAlgorithm(kCCHmacAlgSHA512), Int(CC_SHA512_DIGEST_LENGTH))
+            return .sha512
         }
     }
 }
